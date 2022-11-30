@@ -1,0 +1,41 @@
+.kotak {
+	width:150px;
+  	height:200px;
+  	position:relative;
+  	background-color:#FFFFFF;
+	justify-self:center;
+    border-radius:20px;
+  	z-index:9;
+    transition:all 1s;
+}
+
+.kotak::after{
+  content:"";
+  position:absolute;
+  min-width:125px;
+  min-height:20px;
+  background-color:#FFFFFF;
+  border-radius:30px;
+  bottom:-5px;
+  left:14px;
+  z-index:-12;
+      transition:all 0.5s;
+
+}
+.kotak::before{
+  content:"";
+  position:absolute;
+  min-width:100px;
+  min-height:20px;
+  background-color:#FFFFFF;
+  border-radius:30px;
+  bottom:-10px;
+  left:28px;
+  z-index:-1;
+      transition:all 0.5s;
+
+}
+
+.kotak:hover::after,.kotak:hover::before{
+	transform:translate(0px,5px)
+}

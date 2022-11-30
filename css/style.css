@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@500;700&display=swap');
+
+:root{
+    --main-header-color:#2A2C3B;
+    --main-header-weigth:700;
+    --button-bg-color:#1363DF;
+    --button-color:#FFFFFF;
+    --h3-size:28px;
+    --h4-color:#AE0000;
+    --h4-size:20px;
+    --h4-font-weight:400;
+}
+
+body{
+    scroll-behavior: smooth;
+    font-family: 'Poppins',sans-serif;
+    background-color: #f7f7f7;
+    font-weight: 400;
+}
+
+.jarak-section{
+    margin-top: 50px;
+}
+
+/*! Nav  */
+.navbar-nav{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+}
+
+.navbar-nav a{
+    margin-left: 40px;
+}
+
+.nav-link:hover{
+    color: #1363DF!important;
+    transition: 0.5s;
+}
+
+/*! Header */
+
+.header{
+    margin-top: 50px;
+}
+.header h1{
+    font-size: 46px!important;
+    line-height: 52px;
+    color: var(--main-header-color)!important;
+}
+
+.header h4{
+    font-size: var(--h4-size);
+    color: var(--h4-color);
+    font-weight: var(--h4-font-weight);
+}
+
+.header h5{
+    font-size: 18px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.hero-img{
+    width: 600px;
+    max-height: 350px;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 0 50px;
+}
+
+.tombol{
+    background-color: var(--button-bg-color);
+    color: var(--button-color);
+    width: 150px;
+}
+/*! Partnership */
+.fa-brands{
+    font-size: 60px;
+    /* color: #b2b2bf; */
+    color: #9292a8;
+    opacity: 0.8;
+    margin-right: 60px;
+}
+
+/*! Program  */
+/* .program{
+    margin-top: 50px;
+    margin-bottom: 100px;
+} */
+
+.program h4{
+    font-weight: var(--h4-font-weight);
+    font-size: var(--h4-size);
+    color: var(--h4-color);
+}
+
+.program h3{
+font-weight: var(--main-header-weigth);
+color: var(--main-header-color);
+font-size: var(--h3-size);
+}
+
+.program .card{
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 20px;
+    position: relative;
+    font-weight: 500;
+}
+
+.card::after{
+    content: '';
+    position: absolute;
+    /* top: 500px; */
+    width: 300px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    bottom:-10px;
+    left:30px;
+    opacity: 0.8;
+    transition: all 500ms;
+}
+.card::before{
+    content: '';
+    position: absolute;
+    /* top: 500px; */
+    width: 250px;
+    height: 20px;
+    border-radius: 20px;
+    background-color:#FFFFFF;
+    bottom:-20px;
+    left:55px;
+    opacity: 0.6;
+    transition: all 500ms;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card:hover::after,.card:hover::before{
+    transform: translate(0,5px);
+}
+
+/*! Profile  */
+/* 
+.profile{
+    min-height:400px ;
+} */
+
+.profile-container{
+    border-radius: 50px;
+}
+
+.profile h4{
+    font-weight: var(--h4-font-weight);
+    font-size: var(--h4-size);
+    color: var(--h4-color);
+}
+
+.profile h3{
+font-weight: var(--main-header-weigth);
+color: var(--main-header-color);
+font-size: var(--h3-size);
+}
+
+.nama-tengah{
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.teks-sambutan{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 500;
+}
+
+/*! Contact */
+.contact h4{
+    font-weight: var(--h4-font-weight);
+    font-size: var(--h4-size);
+    color: var(--h4-color);
+}
+
+.contact h3{
+font-weight: var(--main-header-weigth);
+color: var(--main-header-color);
+font-size: var(--h3-size);
+}
+
+.contact-detail h5{
+    font-weight:700 ;
+    font-size: 26px;
+    color: #616161;
+}
+
+.contact-detail p{
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 500;
+    color: #726E6E;
+}
+
+/*! footer */
+footer{
+    height: 50px;
+}
+
+.copyright{
+    color: #616161;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+@media screen and (max-width:480px) {
+    .navbar-nav a{
+        margin-left: 0;
+    }
+}
